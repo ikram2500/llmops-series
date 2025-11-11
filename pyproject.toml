@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "docx2txt==0.8",
+    "fastapi>=0.121.1",
     "ipykernel==6.25.2",
     "langchain==0.3.27",
     "langchain-community==0.3.27",
@@ -19,4 +20,5 @@ dependencies = [
     "python-dotenv>=1.0.1",
     "python-multipart==0.0.6",
     "rapidocr-onnxruntime>=1.4.4",
+    "structlog>=24.1.0",
 ]

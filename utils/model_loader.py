@@ -5,8 +5,11 @@ from dotenv import load_dotenv
 from utils.config_loader import load_config
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain_groq import ChatGroq
-from logger import GLOBAL_LOGGER as log
+from logger.custom_logger import CustomLogger
 from exception.custom_exception import DocumentPortalException
+
+# Initialize logger
+log = CustomLogger().get_logger(__name__)
 
 
 
@@ -77,8 +80,9 @@ class ModelLoader:
         try:
             model_name = self.config["embedding_model"]["model_name"]
             log.info("Loading embedding model", model=model_name)
-            return GoogleGenerativeAIEmbeddings(model=model_name,
-                                                google_api_key=self.api_key_mgr.get("GOOGLE_API_KEY")) #type: ignore
+            # Set API key as environment variable for the SDK
+            os.environ["GOOGLE_API_KEY"] = self.api_key_mgr.get("GOOGLE_API_KEY")
+            return GoogleGenerativeAIEmbeddings(model=model_name)
         except Exception as e:
             log.error("Error loading embedding model", error=str(e))
             raise DocumentPortalException("Failed to load embedding model", sys)
@@ -103,11 +107,10 @@ class ModelLoader:
         log.info("Loading LLM", provider=provider, model=model_name)
 
         if provider == "google":
+            # Set API key as environment variable for the SDK
+            os.environ["GOOGLE_API_KEY"] = self.api_key_mgr.get("GOOGLE_API_KEY")
             return ChatGoogleGenerativeAI(
-                model=model_name,
-                google_api_key=self.api_key_mgr.get("GOOGLE_API_KEY"),
-                temperature=temperature,
-                max_output_tokens=max_tokens
+                model=model_name  # type: ignore
             )
 
         elif provider == "groq":
