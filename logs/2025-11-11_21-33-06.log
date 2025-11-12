@@ -1,0 +1,38 @@
+{"timestamp": "2025-11-11T16:33:06.767743Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-11T16:33:06.767743Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-11T16:33:06.767743Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Kv...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-11T16:33:06.767743Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-11T16:33:06.774850Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20251111_213306_958d9f24", "temp_dir": "data\\session_20251111_213306_958d9f24", "faiss_dir": "faiss_index\\session_20251111_213306_958d9f24", "sessionized": true, "timestamp": "2025-11-11T16:33:06.782597Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "D:\\Machine learning\\llmops_series\\data\\Physics 9th Ch 1 Final.pdf", "saved_as": "data\\session_20251111_213306_958d9f24\\0f6a1146.pdf", "timestamp": "2025-11-11T16:33:06.786192Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 23, "timestamp": "2025-11-11T16:33:08.930537Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 283, "chunk_size": 200, "overlap": 20, "timestamp": "2025-11-11T16:33:08.958815Z", "level": "info", "event": "Documents split"}
+{"model": "models/text-embedding-004", "timestamp": "2025-11-11T16:33:08.960833Z", "level": "info", "event": "Loading embedding model"}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20251111_213306_958d9f24", "timestamp": "2025-11-11T16:33:16.040152Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2025-11-11T16:33:16.040152Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2025-11-11T16:33:16.049622Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-11T16:33:16.049622Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-11T16:33:16.052700Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Kv...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-11T16:33:16.052700Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-11T16:33:16.068554Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.0-flash", "timestamp": "2025-11-11T16:33:16.068554Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20251111_213306_958d9f24", "timestamp": "2025-11-11T16:33:16.128256Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20251111_213306_958d9f24", "timestamp": "2025-11-11T16:33:16.128256Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2025-11-11T16:33:16.138418Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-11T16:33:16.138418Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-11T16:33:16.140439Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Kv...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-11T16:33:16.142465Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-11T16:33:16.162793Z", "level": "info", "event": "YAML config loaded"}
+{"model": "models/text-embedding-004", "timestamp": "2025-11-11T16:33:16.170936Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20251111_213306_958d9f24", "timestamp": "2025-11-11T16:33:16.256925Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20251111_213306_958d9f24", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20251111_213306_958d9f24", "timestamp": "2025-11-11T16:33:16.256925Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+Failed to get info from https://smith.langchain.com: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to batch ingest runs: langsmith.utils.LangSmithError: Failed to POST https://smith.langchain.com/runs/batch in LangSmith API. HTTPError('405 Client Error: Method Not Allowed for url: https://smith.langchain.com/runs/batch', '<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n')
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details..
+Failed to batch ingest runs: langsmith.utils.LangSmithError: Failed to POST https://smith.langchain.com/runs/batch in LangSmith API. HTTPError('405 Client Error: Method Not Allowed for url: https://smith.langchain.com/runs/batch', '<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n')
+Failed to batch ingest runs: langsmith.utils.LangSmithError: Failed to POST https://smith.langchain.com/runs/batch in LangSmith API. HTTPError('405 Client Error: Method Not Allowed for url: https://smith.langchain.com/runs/batch', '<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n')
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details..
+{"error": "429 Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.", "timestamp": "2025-11-11T16:33:57.791896Z", "level": "error", "event": "Failed to invoke ConversationalRAG"}
+Failed to batch ingest runs: langsmith.utils.LangSmithError: Failed to POST https://smith.langchain.com/runs/batch in LangSmith API. HTTPError('405 Client Error: Method Not Allowed for url: https://smith.langchain.com/runs/batch', '<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n')

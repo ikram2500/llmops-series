@@ -1,0 +1,36 @@
+{"timestamp": "2025-11-11T16:44:21.199471Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-11T16:44:21.199471Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-11T16:44:21.199471Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Kv...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-11T16:44:21.199471Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-11T16:44:21.204381Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20251111_214421_870f652a", "temp_dir": "data\\session_20251111_214421_870f652a", "faiss_dir": "faiss_index\\session_20251111_214421_870f652a", "sessionized": true, "timestamp": "2025-11-11T16:44:21.204381Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "D:\\Machine learning\\llmops_series\\data\\Physics 9th Ch 1 Final.pdf", "saved_as": "data\\session_20251111_214421_870f652a\\4a241b26.pdf", "timestamp": "2025-11-11T16:44:21.214158Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 23, "timestamp": "2025-11-11T16:44:22.314750Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 283, "chunk_size": 200, "overlap": 20, "timestamp": "2025-11-11T16:44:22.320264Z", "level": "info", "event": "Documents split"}
+{"model": "models/text-embedding-004", "timestamp": "2025-11-11T16:44:22.324023Z", "level": "info", "event": "Loading embedding model"}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20251111_214421_870f652a", "timestamp": "2025-11-11T16:44:29.308734Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2025-11-11T16:44:29.308734Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2025-11-11T16:44:29.316175Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-11T16:44:29.317392Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-11T16:44:29.318700Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Kv...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-11T16:44:29.318700Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-11T16:44:29.327379Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.0-flash", "timestamp": "2025-11-11T16:44:29.330306Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20251111_214421_870f652a", "timestamp": "2025-11-11T16:44:29.347145Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20251111_214421_870f652a", "timestamp": "2025-11-11T16:44:29.347145Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2025-11-11T16:44:29.357365Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-11T16:44:29.357365Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-11T16:44:29.357365Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Kv...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-11T16:44:29.362208Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-11T16:44:29.365914Z", "level": "info", "event": "YAML config loaded"}
+{"model": "models/text-embedding-004", "timestamp": "2025-11-11T16:44:29.365914Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20251111_214421_870f652a", "timestamp": "2025-11-11T16:44:29.428930Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20251111_214421_870f652a", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20251111_214421_870f652a", "timestamp": "2025-11-11T16:44:29.428930Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+Failed to get info from https://smith.langchain.com/o/e8008ce9-eb06-5861-b8e8-97dd6daeac49/settings/apikeys: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to batch ingest runs: langsmith.utils.LangSmithError: Failed to POST https://smith.langchain.com/o/e8008ce9-eb06-5861-b8e8-97dd6daeac49/settings/apikeys/runs/batch in LangSmith API. HTTPError('405 Client Error: Method Not Allowed for url: https://smith.langchain.com/o/e8008ce9-eb06-5861-b8e8-97dd6daeac49/settings/apikeys/runs/batch', '<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n')
+Failed to batch ingest runs: langsmith.utils.LangSmithError: Failed to POST https://smith.langchain.com/o/e8008ce9-eb06-5861-b8e8-97dd6daeac49/settings/apikeys/runs/batch in LangSmith API. HTTPError('405 Client Error: Method Not Allowed for url: https://smith.langchain.com/o/e8008ce9-eb06-5861-b8e8-97dd6daeac49/settings/apikeys/runs/batch', '<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n')
+Failed to batch ingest runs: langsmith.utils.LangSmithError: Failed to POST https://smith.langchain.com/o/e8008ce9-eb06-5861-b8e8-97dd6daeac49/settings/apikeys/runs/batch in LangSmith API. HTTPError('405 Client Error: Method Not Allowed for url: https://smith.langchain.com/o/e8008ce9-eb06-5861-b8e8-97dd6daeac49/settings/apikeys/runs/batch', '<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n')
+{"session_id": "session_20251111_214421_870f652a", "user_input": "helo", "answer_preview": "I am an assistant designed to answer questions. How can I help?", "timestamp": "2025-11-11T16:45:31.709701Z", "level": "info", "event": "Chain invoked successfully"}
+Failed to batch ingest runs: langsmith.utils.LangSmithError: Failed to POST https://smith.langchain.com/o/e8008ce9-eb06-5861-b8e8-97dd6daeac49/settings/apikeys/runs/batch in LangSmith API. HTTPError('405 Client Error: Method Not Allowed for url: https://smith.langchain.com/o/e8008ce9-eb06-5861-b8e8-97dd6daeac49/settings/apikeys/runs/batch', '<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n')
