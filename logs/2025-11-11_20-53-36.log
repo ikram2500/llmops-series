@@ -1,0 +1,31 @@
+{"timestamp": "2025-11-11T15:53:36.779282Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-11T15:53:36.779704Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-11T15:53:36.779704Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Kv...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-11T15:53:36.779704Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-11T15:53:36.799821Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20251111_205336_999dea9f", "temp_dir": "data\\session_20251111_205336_999dea9f", "faiss_dir": "faiss_index\\session_20251111_205336_999dea9f", "sessionized": true, "timestamp": "2025-11-11T15:53:36.802406Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "D:\\Machine learning\\llmops_series\\data\\Physics 9th Ch 1 Final.pdf", "saved_as": "data\\session_20251111_205336_999dea9f\\2abcc7a5.pdf", "timestamp": "2025-11-11T15:53:36.806314Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 23, "timestamp": "2025-11-11T15:53:38.261563Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 283, "chunk_size": 200, "overlap": 20, "timestamp": "2025-11-11T15:53:38.276299Z", "level": "info", "event": "Documents split"}
+{"model": "models/text-embedding-004", "timestamp": "2025-11-11T15:53:38.276299Z", "level": "info", "event": "Loading embedding model"}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20251111_205336_999dea9f", "timestamp": "2025-11-11T15:53:44.957985Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2025-11-11T15:53:44.959257Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2025-11-11T15:53:44.963242Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-11T15:53:44.963909Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-11T15:53:44.965230Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Kv...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-11T15:53:44.965904Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-11T15:53:44.973648Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.0-flash", "timestamp": "2025-11-11T15:53:44.974383Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20251111_205336_999dea9f", "timestamp": "2025-11-11T15:53:45.008922Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20251111_205336_999dea9f", "timestamp": "2025-11-11T15:53:45.009425Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2025-11-11T15:53:45.015007Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-11T15:53:45.015689Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-11T15:53:45.016368Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Kv...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-11T15:53:45.018040Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-11T15:53:45.026091Z", "level": "info", "event": "YAML config loaded"}
+{"model": "models/text-embedding-004", "timestamp": "2025-11-11T15:53:45.027419Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20251111_205336_999dea9f", "timestamp": "2025-11-11T15:53:45.116703Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20251111_205336_999dea9f", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20251111_205336_999dea9f", "timestamp": "2025-11-11T15:53:45.116703Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+{"session_id": "session_20251111_205336_999dea9f", "user_input": "Which topic are covered in this pdf.", "answer_preview": "The topics covered in this PDF are physical quantities and measurement, and the contribution of Muslim scientists in the development of physics. It al", "timestamp": "2025-11-11T15:56:35.191925Z", "level": "info", "event": "Chain invoked successfully"}
