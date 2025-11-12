@@ -1,4 +1,5 @@
 python-dotenv
+structlog
 
 langchain==0.3.27
 langchain-community==0.3.27
@@ -12,6 +13,8 @@ docx2txt==0.8
 ipykernel==6.25.2
 python-dotenv==1.0.1
 python-multipart==0.0.6
+pandas
+
 
 langsmith
 openai

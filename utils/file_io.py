@@ -40,16 +40,14 @@ def save_uploaded_files(uploaded_files: Iterable, target_dir: Path) -> List[Path
                     if isinstance(data, memoryview):
                         data = data.tobytes()
                     f.write(data)
-                else:
+                elif hasattr(uf, "getbuffer") and callable(getattr(uf, "getbuffer")):
                     # Fallback for objects exposing a getbuffer()
-                    buf = getattr(uf, "getbuffer", None)
-                    if callable(buf):
-                        data = buf()
-                        if isinstance(data, memoryview):
-                            data = data.tobytes()
-                            f.write(data)
-                    else:
-                        raise ValueError("Unsupported uploaded file object; no readable interface")
+                    data = uf.getbuffer()
+                    if isinstance(data, memoryview):
+                        data = data.tobytes()
+                    f.write(data)
+                else:
+                    raise ValueError("Unsupported uploaded file object; no readable interface")
             saved.append(out)
             log.info("File saved for ingestion", uploaded=name, saved_as=str(out))
         return saved
