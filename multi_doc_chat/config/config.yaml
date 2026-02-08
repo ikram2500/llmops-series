@@ -1,0 +1,24 @@
+embedding_model:
+  provider: "google"
+  #model_name: "models/embedding-001"
+  model_name: "models/gemini-embedding-001"
+
+retriever:
+  type_k: 10
+  search_type: "mmr" # Options: "similarity", "mmr", "similarity_score_threshold"
+  # MMR (Maximal Marginal Relevance) parameters for diverse results
+  fetch_k: 20
+  lambda_mult: 0.5
+
+llm:
+  groq:
+    provider: "groq"
+    model_name: "openai/gpt-oss-20b"
+    temperature: 0
+    max_output_tokens: 2048
+
+  google:
+    provider: "google"
+    model_name: "gemini-2.0-flash-lite"
+    temperature: 0.0
+    max_output_tokens: 2048  

@@ -2,8 +2,8 @@ import os
 import sys
 from dotenv import load_dotenv
 from pathlib import Path
-from src.document_ingestion.data_ingestion import ChatIngestor
-from src.document_chat.retrieval import ConversationalRAG
+from multi_doc_chat.src.document_ingestion.data_ingestion import ChatIngestor
+from multi_doc_chat.src.document_chat.retrieval import ConversationalRAG
 from langchain_core.messages import HumanMessage, AIMessage
 
 
