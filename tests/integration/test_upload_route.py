@@ -24,7 +24,7 @@ def test_upload_ingestor_failure_returns_500(client, clear_sessions, monkeypatch
     class Boom:
         def __init__(self, *a, **k):
             self.session_id = "sess_test"
-        def built_retriver(self, *a, **k):
+        def built_retriever(self, *a, **k):
             from multi_doc_chat.exception.custom_exception import DocumentPortalException
             raise DocumentPortalException("boom", None)
 
