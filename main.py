@@ -12,13 +12,13 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
-from model.models import UploadResponse, ChatResponse, ChatRequest
-from utils.document_ops import FastAPIFileAdapter
+from multi_doc_chat.model.models import UploadResponse, ChatResponse, ChatRequest
+from multi_doc_chat.utils.document_ops import FastAPIFileAdapter
 
-from src.document_ingestion.data_ingestion import ChatIngestor
-from src.document_chat.retrieval import ConversationalRAG 
+from multi_doc_chat.src.document_ingestion.data_ingestion import ChatIngestor 
+from multi_doc_chat.src.document_chat.retrieval import ConversationalRAG 
 from langchain_core.messages import HumanMessage, AIMessage 
-from exception.custom_exception import DocumentPortalException
+from multi_doc_chat.exception.custom_exception import DocumentPortalException
 
 
 
