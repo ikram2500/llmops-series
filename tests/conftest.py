@@ -121,7 +121,7 @@ def stub_ingestor(monkeypatch):
             self.use_session = use_session_dirs
             self.session_id = "sess_test"
 
-        def built_retriver(self, uploaded_files, **kwargs):
+        def built_retriever(self, uploaded_files, **kwargs):
             return None
 
     monkeypatch.setattr(di, "ChatIngestor", FakeIngestor)
