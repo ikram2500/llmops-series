@@ -13,7 +13,7 @@ docx2txt==0.8
 ipykernel==6.25.2
 python-dotenv==1.0.1
 python-multipart==0.0.6
-pandas
+faiss-cpu
 
 fastapi==0.115.1
 uvicorn==0.32.1
