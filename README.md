@@ -222,4 +222,36 @@ This project is open source and available under the MIT License.
 
 ---
 
+**AWS IAM user policies**: 
+1. AmazonEC2ContainerRegistryFullAccess 
+2. AmazonECS_FullAccess 
+3. AmazonS3FullAccess 
+4. CloudWatchFullAccess 
+5. SecretsManagerReadWrite
+6. AllowECSLogs '''{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "Statement1",
+			"Effect": "Allow",
+			"Action": [
+			    "logs:CreateLogGroup",
+			    "logs:CreateLogStream",
+			    "logs:PutLogEvents"
+			    ],
+			"Resource": "*"
+		}
+	]
+}'''
+7. AllowSecretsAccess  '''{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "Statement1",
+			"Effect": "Allow",
+			"Action": "secretsmanager:GetSecretValue",
+			"Resource": "arn:aws:secretsmanager:ap-southeast-2:459497895986:secret:api_keys-nZTtj8"
+		}
+	]
+}''' 
 **Note**: This is part of an educational series on LLM Operations (LLMOps). Stay tuned for more projects!
