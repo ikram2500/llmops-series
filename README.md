@@ -254,4 +254,4 @@ This project is open source and available under the MIT License.
 		}
 	]
 }''' 
-**Note**: This is part of an educational series on LLM Operations (LLMOps). Stay tuned for more projects!
+**Note**: This is part of an educational series on LLM Operations (LLMOps). Stay tuned for more projects! some changes in 
